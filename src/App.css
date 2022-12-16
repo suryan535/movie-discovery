@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -26,6 +28,81 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.topBar
+{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:10px 5% 0px 5%;
+}
+
+input
+{
+  padding:10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  border: 1px solid #C0C4CC;
+  border-radius: 2px;
+}
+
+
+.contentBarHeading
+{
+  font-family: 'Inter';
+  font-style: normal;
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  margin:20px 0px 30px 0px;
+}
+
+.contentBar
+{
+  display:flex;
+  flex-direction: column;
+  margin:30px 5% 0px 5%;
+}
+
+.contentBarDisplay
+{
+  display:grid;
+  grid-gap: 50px;
+}
+
+@media only screen and (min-width:1200px)
+{
+.contentBarDisplay
+{
+  grid-template-columns: repeat(4,1fr);
+}
+}
+
+@media only screen and (min-width:1000px) and (max-width:1200px) {
+  .contentBarDisplay
+{
+  grid-template-columns: repeat(3,1fr);
+}
+}
+
+@media only screen and (min-width:700px) and (max-width:1000px) {
+  .contentBarDisplay
+{
+  grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media only screen and (max-width:700px) {
+  .contentBarDisplay
+{
+  grid-template-columns: 1fr;
+}
 }
 
 @keyframes App-logo-spin {
