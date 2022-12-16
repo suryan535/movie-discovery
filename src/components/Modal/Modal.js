@@ -19,8 +19,8 @@ const Modal=(props)=>
             </div>
             <div className={classes.content}>
               <div className={classes.left}>
-              <img style={{width:"266px",
-            height:"389px"}}
+              <img style={{width:"280px",
+            height:"340px"}}
             src={props.data.image}
             alt="Image Not Found"
             ></img>
